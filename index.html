@@ -1,60 +1,173 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html lang="en">
 <head>
-<title>Ikshvaku Research</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body{
-font-family:Arial,sans-serif;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ikshvaku Research</title><style>
+
+*{
 margin:0;
-background:#f5f7fa;
-color:#111;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
-header{
-background:#0b1f3a;
+
+body{
+background:#f5f7fa;
+color:#222;
+line-height:1.6;
+}
+
+nav{
+background:#071a35;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
 color:white;
-padding:60px 20px;
+font-size:22px;
+font-weight:bold;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:15px;
+}
+
+.hero{
+background:linear-gradient(135deg,#071a35,#0f3568);
+color:white;
+padding:100px 20px;
 text-align:center;
 }
-section{
-padding:30px;
-max-width:900px;
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+max-width:700px;
 margin:auto;
 }
+
+.buttons{
+margin-top:30px;
+}
+
+.btn{
+background:white;
+color:#071a35;
+padding:12px 24px;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+margin:5px;
+display:inline-block;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:40px 20px;
+background:white;
+flex-wrap:wrap;
+}
+
+.stat{
+text-align:center;
+}
+
+.stat h2{
+font-size:32px;
+color:#071a35;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:50px 20px;
+}
+
+.section-title{
+font-size:30px;
+margin-bottom:25px;
+color:#071a35;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
 .card{
 background:white;
-padding:20px;
-margin:15px 0;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,.1);
+padding:25px;
+border-radius:12px;
+box-shadow:0 2px 12px rgba(0,0,0,.08);
 }
-</style>
-</head>
-<body>
 
-<header>
-<h1>IKSHVAKU RESEARCH</h1>
-<p>Independent Investment Research</p>
-</header>
+.card h3{
+margin-bottom:10px;
+}
 
-<section>
+.footer{
+background:#071a35;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:50px;
+}
 
-<div class="card">
-<h2>Research</h2>
-<p>Business analysis and investment ideas.</p>
+</style></head><body><nav>
+<div class="logo">IKSHVAKU RESEARCH</div><div class="menu">
+<a href="#">Home</a>
+<a href="#">Research</a>
+<a href="#">Portfolio</a>
+<a href="#">Journal</a>
+<a href="#">About</a>
 </div>
-
-<div class="card">
-<h2>Portfolio</h2>
-<p>Track portfolio performance and holdings.</p>
-</div>
-
-<div class="card">
-<h2>Journal</h2>
-<p>Monthly investing updates and lessons.</p>
-</div>
-
-</section>
-
-</body>
+</nav><section class="hero"><h1>IKSHVAKU RESEARCH</h1><p>
+Independent Investment Research focused on business analysis,
+portfolio management and long-term capital compounding.
+</p><div class="buttons">
+<a href="#" class="btn">Research Reports</a>
+<a href="#" class="btn">Portfolio</a>
+</div></section><section class="stats"><div class="stat">
+<h2>0</h2>
+<p>Research Reports</p>
+</div><div class="stat">
+<h2>0</h2>
+<p>Portfolio Holdings</p>
+</div><div class="stat">
+<h2>0</h2>
+<p>Years Tracked</p>
+</div></section><div class="container"><h2 class="section-title">Research Coverage</h2><div class="cards"><div class="card">
+<h3>Equity Research</h3>
+<p>
+In-depth analysis of listed businesses and investment opportunities.
+</p>
+</div><div class="card">
+<h3>Portfolio Management</h3>
+<p>
+Track performance, holdings and investment decisions.
+</p>
+</div><div class="card">
+<h3>Investment Journal</h3>
+<p>
+Document lessons, market observations and long-term thinking.
+</p>
+</div></div></div><div class="container"><h2 class="section-title">Investment Philosophy</h2><div class="card"><p>
+Research. Discipline. Compounding.
+</p><br><p>
+The objective of Ikshvaku Research is to identify high-quality businesses,
+allocate capital responsibly and document the investment journey with transparency.
+</p></div></div><footer class="footer"><h3>IKSHVAKU RESEARCH</h3><p>Independent Investment Research</p><br><p>Research • Discipline • Compounding</p></footer></body>
 </html>
