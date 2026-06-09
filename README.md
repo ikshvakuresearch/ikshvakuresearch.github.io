@@ -3,11 +3,12 @@
 Independent Investment Research focused on business analysis, capital allocation and long-term wealth creation.
 
 ## Sections
-
-- Research
-- Portfolio
-- Journal
-- About
+Research
+Portfolio
+Performance
+Transparency
+About
+Contact
 
 ## Philosophy
 
