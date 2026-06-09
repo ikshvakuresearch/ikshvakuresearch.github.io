@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Portfolio | Ikshvaku Research</title>
 
 <style>
@@ -11,17 +14,17 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:#f4f6f9;
-color:#1a1a1a;
-line-height:1.8;
+background:#f5f7fa;
+color:#222;
+line-height:1.7;
 }
 
-.navbar{
-background:#031f4f;
+nav{
+background:#071a35;
 padding:18px 8%;
 display:flex;
 justify-content:space-between;
@@ -30,22 +33,22 @@ align-items:center;
 
 .logo{
 color:white;
-font-weight:bold;
 font-size:22px;
+font-weight:bold;
 }
 
-.nav-links a{
+.menu a{
 color:white;
 text-decoration:none;
-margin-left:25px;
+margin-left:20px;
 font-size:14px;
 }
 
 .hero{
-background:linear-gradient(135deg,#031f4f,#003b9a);
+background:linear-gradient(135deg,#071a35,#0f3568);
 color:white;
 text-align:center;
-padding:100px 20px;
+padding:120px 20px;
 }
 
 .hero h1{
@@ -54,10 +57,10 @@ margin-bottom:20px;
 }
 
 .hero p{
-max-width:900px;
+max-width:850px;
 margin:auto;
 font-size:20px;
-line-height:1.7;
+line-height:1.8;
 }
 
 .container{
@@ -66,112 +69,60 @@ margin:auto;
 padding:60px 20px;
 }
 
-.section{
-background:white;
-padding:40px;
-margin-bottom:30px;
-border-radius:12px;
-box-shadow:0 3px 12px rgba(0,0,0,0.08);
-}
-
-.section h2{
-color:#031f4f;
-margin-bottom:20px;
+.section-title{
 font-size:34px;
-}
-
-.section p{
-margin-bottom:15px;
-font-size:17px;
+margin-bottom:25px;
+color:#071a35;
 }
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
-margin-bottom:30px;
 }
 
 .card{
 background:white;
 padding:30px;
 border-radius:12px;
-box-shadow:0 3px 12px rgba(0,0,0,0.08);
+box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
 .card h3{
-color:#031f4f;
-margin-bottom:12px;
+color:#071a35;
+margin-bottom:15px;
 }
 
-.framework{
-background:#031f4f;
-color:white;
-padding:60px;
-border-radius:12px;
-text-align:center;
-margin-bottom:30px;
-}
-
-.framework h2{
-font-size:42px;
-margin-bottom:20px;
-}
-
-.framework p{
-font-size:20px;
-max-width:900px;
-margin:auto;
+.card-value{
+font-size:32px;
+font-weight:bold;
+color:#0f3568;
 }
 
 .footer{
-background:#031f4f;
+background:#071a35;
 color:white;
 text-align:center;
-padding:50px 20px;
+padding:50px;
 margin-top:60px;
 }
 
-@media(max-width:768px){
-
-.hero h1{
-font-size:38px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-.navbar{
-flex-direction:column;
-gap:15px;
-}
-
-.nav-links{
-text-align:center;
-}
-
-.nav-links a{
-margin:0 8px;
-}
-}
-
 </style>
+
 </head>
 
 <body>
 
-<nav class="navbar">
+<nav>
 
-<div class="logo">
-IKSHVAKU RESEARCH
-</div>
+<div class="logo">IKSHVAKU RESEARCH</div>
 
-<div class="nav-links">
+<div class="menu">
 <a href="index.html">Home</a>
 <a href="research.html">Research</a>
 <a href="portfolio.html">Portfolio</a>
 <a href="journal.html">Journal</a>
+<a href="reports.html">Reports</a>
 <a href="about.html">About</a>
 </div>
 
@@ -179,111 +130,233 @@ IKSHVAKU RESEARCH
 
 <section class="hero">
 
-<h1>Investment Portfolio</h1>
+<h1>Capital Allocation Record</h1>
 
 <p>
-A transparent record of investment decisions, capital allocation,
-portfolio development and long-term wealth creation through disciplined investing.
+A transparent public record of research, capital allocation,
+portfolio decisions and long-term performance development.
+The objective is to document investment decisions,
+risk management and continuous improvement over time.
 </p>
 
 </section>
+  <div class="container">
 
-<div class="container">
+<h2 class="section-title">Capital Account</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>Capital Allocation</h3>
-
-<p>
-Portfolio decisions are guided by business quality, valuation,
-risk assessment and long-term return potential.
-</p>
+<h3>Starting Capital</h3>
+<div class="card-value">₹10,000</div>
+<p>Initial capital allocated to the portfolio.</p>
 </div>
 
 <div class="card">
-<h3>Portfolio Tracking</h3>
-
-<p>
-Investment decisions and portfolio updates are documented
-to build a transparent long-term track record.
-</p>
+<h3>Current Value</h3>
+<div class="card-value">₹10,000</div>
+<p>Updated as positions are initiated and reviewed.</p>
 </div>
 
 <div class="card">
-<h3>Continuous Improvement</h3>
+<h3>Total Return</h3>
+<div class="card-value">0.00%</div>
+<p>Portfolio performance since inception.</p>
+</div>
 
-<p>
-Every decision is reviewed to improve investment judgment,
-process quality and capital allocation discipline.
-</p>
+<div class="card">
+<h3>Status</h3>
+<div class="card-value">Active</div>
+<p>Portfolio tracking initiated.</p>
 </div>
 
 </div>
 
-<div class="section">
-
-<h2>Portfolio Philosophy</h2>
-
-<p>
-The portfolio is managed using a long-term business ownership mindset.
-The objective is not to maximize short-term performance but to compound capital responsibly over long periods of time.
-</p>
-
-<p>
-Investment decisions are based on research, valuation discipline,
-risk awareness and independent thinking.
-</p>
-
-<p>
-A strong investment process is considered more important than short-term outcomes.
-</p>
-
 </div>
 
-<div class="section">
 
-<h2>Current Portfolio</h2>
+<div class="container">
 
-<p>
-The portfolio is currently under development and will be updated as investment positions are initiated and documented.
-</p>
+<h2 class="section-title">Current Positions</h2>
 
-<p>
-Future portfolio disclosures will include investment rationale,
-position sizing considerations and capital allocation decisions.
-</p>
-
-</div>
-<div class="section">
-
-<h2>Portfolio Allocation Framework</h2>
+<div class="card">
 
 <p>
-Capital allocation decisions are guided by business quality,
-competitive advantages, financial strength and expected long-term returns.
+No active public positions at this time.
+Future disclosures will include:
 </p>
+
+<br>
 
 <ul>
-<li>Business Quality Assessment</li>
-<li>Financial Strength Evaluation</li>
-<li>Valuation Analysis</li>
-<li>Risk Assessment</li>
-<li>Position Sizing Discipline</li>
-<li>Ongoing Monitoring</li>
+
+<li>Entry Price</li>
+
+<li>Position Size</li>
+
+<li>Investment Type (Long-Term / Swing / Short-Term)</li>
+
+<li>Risk Management Framework</li>
+
+<li>Target Framework</li>
+
+<li>Investment Thesis</li>
+
+<li>Quarterly Reviews</li>
+
+<li>Exit Analysis</li>
+
 </ul>
 
 </div>
 
-<div class="section">
+</div>
 
-<h2>Investment Process</h2>
+
+<div class="container">
+
+<h2 class="section-title">Research Watchlist</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>TCS</h3>
+<p>Status: Research Completed</p>
+</div>
+
+<div class="card">
+<h3>Infosys</h3>
+<p>Status: Under Review</p>
+</div>
+
+<div class="card">
+<h3>HDFC Bank</h3>
+<p>Status: Watchlist</p>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="container">
+
+<h2 class="section-title">Performance Dashboard</h2>
+
+<div class="card">
+
+<p>
+Performance reporting will begin once portfolio
+positions are initiated and sufficient historical
+data becomes available.
+</p>
+
+<br>
+
+<p>
+Future reports will include:
+</p>
+
+<ul>
+
+<li>Quarterly Returns</li>
+
+<li>Annual Returns</li>
+
+<li>Capital Growth</li>
+
+<li>Benchmark Comparison</li>
+
+<li>Portfolio Commentary</li>
+
+</ul>
+
+</div>
+
+</div>
+  <div class="container">
+
+<h2 class="section-title">Quarterly Letters</h2>
+
+<div class="card">
+
+<p>
+Quarterly letters will document portfolio performance,
+capital allocation decisions, investment lessons and
+business developments.
+</p>
+
+<br>
+
+<p>
+Future quarterly reports will include:
+</p>
+
+<ul>
+
+<li>Opening Capital</li>
+
+<li>Closing Capital</li>
+
+<li>Quarterly Return</li>
+
+<li>Benchmark Comparison</li>
+
+<li>Portfolio Commentary</li>
+
+<li>Key Decisions</li>
+
+<li>Lessons Learned</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="container">
+
+<h2 class="section-title">Recent Activity</h2>
+
+<div class="card">
+
+<p><strong>June 2026</strong></p>
+
+<p>
+Portfolio tracking framework established.
+Research process and capital allocation structure initiated.
+</p>
+
+<br>
+
+<p><strong>Latest Updates</strong></p>
+
+<ul>
+
+<li>TCS Strategic Assessment Published</li>
+
+<li>TCS AI Strategic Blueprint Published</li>
+
+<li>Research Archive Established</li>
+
+<li>Portfolio Framework Introduced</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="container">
+
+<h2 class="section-title">Investment Process</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>1. Research</h3>
-
 <p>
 Study annual reports, financial statements,
 industry dynamics and competitive positioning.
@@ -292,27 +365,25 @@ industry dynamics and competitive positioning.
 
 <div class="card">
 <h3>2. Valuation</h3>
-
 <p>
-Estimate intrinsic value and evaluate potential
+Estimate intrinsic value and evaluate
 risk-reward opportunities.
 </p>
 </div>
 
 <div class="card">
 <h3>3. Decision</h3>
-
 <p>
-Document investment thesis, risks and capital allocation rationale.
+Document investment thesis, position sizing,
+risk limits and capital allocation rationale.
 </p>
 </div>
 
 <div class="card">
 <h3>4. Monitoring</h3>
-
 <p>
-Track business performance, capital allocation decisions
-and thesis development.
+Track business performance, quarterly results
+and thesis development over time.
 </p>
 </div>
 
@@ -320,112 +391,46 @@ and thesis development.
 
 </div>
 
-<div class="framework">
 
-<h2>Capital Allocation. Discipline. Compounding.</h2>
+<div class="container">
+
+<h2 class="section-title">Disclaimer</h2>
+
+<div class="card">
 
 <p>
-Long-term wealth creation is achieved through rational decision-making,
-business ownership thinking and disciplined portfolio management.
+This website documents the research process,
+capital allocation decisions and performance history
+of Ikshvaku Research.
 </p>
 
-</div>
-
-<div class="section">
-
-<h2>Recent Portfolio Activity</h2>
+<br>
 
 <p>
-Portfolio activity will be published here as investment decisions are documented.
+All content is published solely for educational,
+research and record-keeping purposes.
 </p>
 
-<ul>
-<li>No portfolio transactions published yet.</li>
-<li>Future investment decisions will include thesis summaries.</li>
-<li>Position updates will be documented transparently.</li>
-</ul>
-
-</div>
-
-<div class="section">
-
-<h2>Portfolio Rules</h2>
-
-<ul>
-
-<li>Invest only after sufficient research.</li>
-
-<li>Focus on business quality over market noise.</li>
-
-<li>Maintain a long-term investment horizon.</li>
-
-<li>Avoid emotional decision-making.</li>
-
-<li>Review investment theses periodically.</li>
-
-<li>Learn continuously from successes and mistakes.</li>
-
-<li>Protect capital through risk awareness.</li>
-
-</ul>
-
-</div>
-
-<div class="section">
-
-<h2>Performance Tracking</h2>
+<br>
 
 <p>
-Performance reporting will be introduced as the portfolio develops
-and meaningful historical data becomes available.
+Nothing contained on this website should be interpreted
+as investment advice, portfolio management services,
+financial advice or a recommendation to buy or sell
+any security.
 </p>
 
-<p>
-The objective is transparency rather than short-term performance comparison.
-</p>
-
-</div>
-  
-<div class="section">
-
-<h2>Long-Term Objective</h2>
+<br>
 
 <p>
-The primary objective of Ikshvaku Research is to build a transparent
-public record of investment decisions, portfolio development and capital allocation.
-</p>
-
-<p>
-Over time, this portfolio will serve as a practical demonstration of the
-investment philosophy, research process and decision-making framework documented throughout the website.
-</p>
-
-<p>
-The focus remains on continuous improvement, rational investing and long-term wealth creation.
-</p>
-
-</div>
-
-<div class="section">
-
-<h2>Disclaimer</h2>
-
-<p>
-All information published within this portfolio section is provided solely for educational and research purposes.
-</p>
-
-<p>
-Nothing contained on this website should be interpreted as investment,
-legal, tax or financial advice, nor should any content be considered a recommendation to buy or sell any security.
-</p>
-
-<p>
-Readers should conduct their own research and consult qualified financial professionals before making investment decisions.
+Readers should conduct their own research and consult
+qualified professionals before making investment decisions.
 </p>
 
 </div>
 
 </div>
+
 
 <footer class="footer">
 
@@ -445,3 +450,6 @@ Readers should conduct their own research and consult qualified financial profes
 
 </body>
 </html>
+
+  
+  
