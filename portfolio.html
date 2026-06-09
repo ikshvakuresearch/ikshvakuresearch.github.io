@@ -1,8 +1,8 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -88,15 +88,35 @@ border-radius:12px;
 box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
-.card h3{
-color:#071a35;
-margin-bottom:15px;
-}
-
 .card-value{
 font-size:32px;
 font-weight:bold;
 color:#0f3568;
+margin-top:10px;
+}
+
+.table-card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+overflow-x:auto;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:14px;
+border-bottom:1px solid #ddd;
+text-align:left;
+}
+
+th{
+background:#071a35;
+color:white;
 }
 
 .footer{
@@ -121,277 +141,154 @@ margin-top:60px;
 <a href="index.html">Home</a>
 <a href="research.html">Research</a>
 <a href="portfolio.html">Portfolio</a>
-<a href="journal.html">Journal</a>
-<a href="reports.html">Reports</a>
+<a href="performance.html">Performance</a>
+<a href="transparency.html">Transparency</a>
 <a href="about.html">About</a>
+<a href="contact.html">Contact</a>
 </div>
 
 </nav>
 
 <section class="hero">
 
-<h1>Capital Allocation Record</h1>
+<h1>Portfolio</h1>
 
 <p>
-A transparent public record of research, capital allocation,
-portfolio decisions and long-term performance development.
-The objective is to document investment decisions,
-risk management and continuous improvement over time.
+Public record of capital allocation decisions,
+active positions, closed positions and performance metrics.
 </p>
 
 </section>
-  <div class="container">
+<div class="container">
 
-<h2 class="section-title">Capital Account</h2>
+<h2 class="section-title">Portfolio Overview</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Starting Capital</h3>
 <div class="card-value">₹10,000</div>
-<p>Initial capital allocated to the portfolio.</p>
 </div>
 
 <div class="card">
-<h3>Current Value</h3>
+<h3>Current Capital</h3>
 <div class="card-value">₹10,000</div>
-<p>Updated as positions are initiated and reviewed.</p>
 </div>
 
 <div class="card">
-<h3>Total Return</h3>
+<h3>Net Return</h3>
 <div class="card-value">0.00%</div>
-<p>Portfolio performance since inception.</p>
+</div>
+
+<div class="card">
+<h3>Win Rate</h3>
+<div class="card-value">100%</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<h2 class="section-title">Active Positions</h2>
+
+<div class="table-card">
+
+<table>
+
+<thead>
+<tr>
+<th>Ticker</th>
+<th>Company</th>
+<th>Strategy</th>
+<th>Entry</th>
+<th>Qty</th>
+<th>SL</th>
+<th>Target</th>
+<th>Status</th>
+</tr>
+</thead>
+
+<tbody id="activePositionsTable">
+
+<tr>
+<td colspan="8">Loading positions...</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<h2 class="section-title">Closed Positions</h2>
+
+<div class="table-card">
+
+<table>
+
+<thead>
+<tr>
+<th>Ticker</th>
+<th>Entry</th>
+<th>Exit</th>
+<th>Return %</th>
+<th>Exit Reason</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>UNIONBANK</td>
+<td>150</td>
+<td>195</td>
+<td>30%</td>
+<td>Target Achieved</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<h2 class="section-title">Performance Metrics</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Active Positions</h3>
+<div class="card-value">1</div>
+</div>
+
+<div class="card">
+<h3>Closed Positions</h3>
+<div class="card-value">1</div>
+</div>
+
+<div class="card">
+<h3>Research Reports</h3>
+<div class="card-value">2</div>
 </div>
 
 <div class="card">
 <h3>Status</h3>
 <div class="card-value">Active</div>
-<p>Portfolio tracking initiated.</p>
 </div>
 
 </div>
 
 </div>
-
-
-<div class="container">
-
-<h2 class="section-title">Current Positions</h2>
-
-<div class="card">
-
-<p>
-No active public positions at this time.
-Future disclosures will include:
-</p>
-
-<br>
-
-<ul>
-
-<li>Entry Price</li>
-
-<li>Position Size</li>
-
-<li>Investment Type (Long-Term / Swing / Short-Term)</li>
-
-<li>Risk Management Framework</li>
-
-<li>Target Framework</li>
-
-<li>Investment Thesis</li>
-
-<li>Quarterly Reviews</li>
-
-<li>Exit Analysis</li>
-
-</ul>
-
-</div>
-
-</div>
-
-
-<div class="container">
-
-<h2 class="section-title">Research Watchlist</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>TCS</h3>
-<p>Status: Research Completed</p>
-</div>
-
-<div class="card">
-<h3>Infosys</h3>
-<p>Status: Under Review</p>
-</div>
-
-<div class="card">
-<h3>HDFC Bank</h3>
-<p>Status: Watchlist</p>
-</div>
-
-</div>
-
-</div>
-
-
-<div class="container">
-
-<h2 class="section-title">Performance Dashboard</h2>
-
-<div class="card">
-
-<p>
-Performance reporting will begin once portfolio
-positions are initiated and sufficient historical
-data becomes available.
-</p>
-
-<br>
-
-<p>
-Future reports will include:
-</p>
-
-<ul>
-
-<li>Quarterly Returns</li>
-
-<li>Annual Returns</li>
-
-<li>Capital Growth</li>
-
-<li>Benchmark Comparison</li>
-
-<li>Portfolio Commentary</li>
-
-</ul>
-
-</div>
-
-</div>
-  <div class="container">
-
-<h2 class="section-title">Quarterly Letters</h2>
-
-<div class="card">
-
-<p>
-Quarterly letters will document portfolio performance,
-capital allocation decisions, investment lessons and
-business developments.
-</p>
-
-<br>
-
-<p>
-Future quarterly reports will include:
-</p>
-
-<ul>
-
-<li>Opening Capital</li>
-
-<li>Closing Capital</li>
-
-<li>Quarterly Return</li>
-
-<li>Benchmark Comparison</li>
-
-<li>Portfolio Commentary</li>
-
-<li>Key Decisions</li>
-
-<li>Lessons Learned</li>
-
-</ul>
-
-</div>
-
-</div>
-
-
-<div class="container">
-
-<h2 class="section-title">Recent Activity</h2>
-
-<div class="card">
-
-<p><strong>June 2026</strong></p>
-
-<p>
-Portfolio tracking framework established.
-Research process and capital allocation structure initiated.
-</p>
-
-<br>
-
-<p><strong>Latest Updates</strong></p>
-
-<ul>
-
-<li>TCS Strategic Assessment Published</li>
-
-<li>TCS AI Strategic Blueprint Published</li>
-
-<li>Research Archive Established</li>
-
-<li>Portfolio Framework Introduced</li>
-
-</ul>
-
-</div>
-
-</div>
-
-
-<div class="container">
-
-<h2 class="section-title">Investment Process</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>1. Research</h3>
-<p>
-Study annual reports, financial statements,
-industry dynamics and competitive positioning.
-</p>
-</div>
-
-<div class="card">
-<h3>2. Valuation</h3>
-<p>
-Estimate intrinsic value and evaluate
-risk-reward opportunities.
-</p>
-</div>
-
-<div class="card">
-<h3>3. Decision</h3>
-<p>
-Document investment thesis, position sizing,
-risk limits and capital allocation rationale.
-</p>
-</div>
-
-<div class="card">
-<h3>4. Monitoring</h3>
-<p>
-Track business performance, quarterly results
-and thesis development over time.
-</p>
-</div>
-
-</div>
-
-</div>
-
-
 <div class="container">
 
 <h2 class="section-title">Disclaimer</h2>
@@ -399,42 +296,33 @@ and thesis development over time.
 <div class="card">
 
 <p>
-This website documents the research process,
-capital allocation decisions and performance history
-of Ikshvaku Research.
+This portfolio is maintained as a transparent public record of
+research, capital allocation decisions and investment outcomes.
 </p>
 
 <br>
 
 <p>
-All content is published solely for educational,
-research and record-keeping purposes.
+All information is published for educational, research and
+record-keeping purposes only.
 </p>
 
 <br>
 
 <p>
-Nothing contained on this website should be interpreted
-as investment advice, portfolio management services,
-financial advice or a recommendation to buy or sell
-any security.
-</p>
-
-<br>
-
-<p>
-Readers should conduct their own research and consult
-qualified professionals before making investment decisions.
+Nothing on this website constitutes investment advice or a
+recommendation to buy or sell securities.
 </p>
 
 </div>
 
 </div>
-
 
 <footer class="footer">
 
 <h3>IKSHVAKU RESEARCH</h3>
+
+<br>
 
 <p>Independent Investment Research</p>
 
@@ -448,8 +336,48 @@ qualified professionals before making investment decisions.
 
 </footer>
 
+<script>
+
+const API_URL =
+"https://script.google.com/macros/s/AKfycbw0PyN6cPAIoCDT6Rv5UgYj348V_y1rDPTOw8T0HaL0ADOY-oWjtZRnj4-XjsADgSTl7w/exec";
+
+fetch(API_URL)
+.then(response => response.json())
+.then(data => {
+
+const table =
+document.getElementById("activePositionsTable");
+
+table.innerHTML = "";
+
+data.forEach(position => {
+
+table.innerHTML += `
+<tr>
+<td>${position["Ticker"]}</td>
+<td>${position["Company"]}</td>
+<td>${position["Strategy"]}</td>
+<td>${position["Entry Price"]}</td>
+<td>${position["Quantity"]}</td>
+<td>${position["Stop Loss"]}</td>
+<td>${position["Target"]}</td>
+<td>${position["Status"]}</td>
+</tr>
+`;
+
+});
+
+})
+.catch(error => {
+
+document.getElementById("activePositionsTable").innerHTML =
+"<tr><td colspan='8'>Unable to load portfolio data.</td></tr>";
+
+console.error(error);
+
+});
+
+</script>
+
 </body>
 </html>
-
-  
-  
